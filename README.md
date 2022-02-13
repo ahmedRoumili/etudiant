@@ -1,8 +1,10 @@
 #  Gestionnaire d'étudiants
-## Informations générale
+Cette application, développé en C
+github pages: https://ahmedroumili.github.io/etudiant/
 
-    Cette application, développé en C
-    github pages: https://ahmedroumili.github.io/etudiant/
+## Auteurs
+    ROUMILI Ahmed
+    
 ## Fonctionnalités
     Affichage de la liste des étudiants
     Ajouter un étudiant
@@ -10,7 +12,6 @@
     Supprimer un étudiant
     Afficher la moyenne d'un étudiant
     
-
 ## Compilation
 
     commandes bash:
@@ -21,10 +22,6 @@
     
 ## Execution
     ./etud
-
-
-## Auteurs
-    ROUMILI Ahmed
 
 # Images
 
