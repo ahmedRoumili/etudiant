@@ -2,7 +2,7 @@
 ## Informations générale
 
     Cette application, développé en C
-    
+    github pages: https://ahmedroumili.github.io/etudiant/
 ## Fonctionnalités
     Affichage de la liste des étudiants
     Ajouter un étudiant
