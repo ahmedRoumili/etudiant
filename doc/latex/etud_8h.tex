@@ -1,0 +1,214 @@
+\hypertarget{etud_8h}{}\section{src/include/etud.h File Reference}
+\label{etud_8h}\index{src/include/etud.\+h@{src/include/etud.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for etud.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structetud}{etud}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structetud}{etud} \hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{etud_8h_ad9429c78019005dc6e8e62a30166c64b}{print\+\_\+list} ()
+\begin{DoxyCompactList}\small\item\em afficher la liste des étudiants \end{DoxyCompactList}\item 
+int \hyperlink{etud_8h_acaad045f03aea2b4ba2ea4d05e9c8808}{add\+\_\+etud} (char $\ast$nom, char $\ast$prenom, float note, int num)
+\begin{DoxyCompactList}\small\item\em ajouter un étudiant \end{DoxyCompactList}\item 
+int \hyperlink{etud_8h_aca1ed83fcec5a3abe61ffa9e168b22c5}{delete\+\_\+etud} (int num)
+\begin{DoxyCompactList}\small\item\em supprimer un étudiant \end{DoxyCompactList}\item 
+\hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud} $\ast$ \hyperlink{etud_8h_a9eb202d2d79a93e3f6a7e398933b79f2}{find\+\_\+etud} (int num)
+\begin{DoxyCompactList}\small\item\em recherhcer un étudiant \end{DoxyCompactList}\item 
+int \hyperlink{etud_8h_a7e4c07c628623f39e2c79d1f21d38856}{find\+\_\+etud\+\_\+by\+\_\+name} (char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em trouver un étudiant en saisissant son nom \end{DoxyCompactList}\item 
+float \hyperlink{etud_8h_ad75342cbc2aea3cf52cfa0669d9652d5}{average} ()
+\begin{DoxyCompactList}\small\item\em calculer la moyenne \end{DoxyCompactList}\item 
+int \hyperlink{etud_8h_a9bf3535d8e16833513b0c83b7e3529c6}{set\+Note} (int num, float note)
+\begin{DoxyCompactList}\small\item\em modifier la note d\textquotesingle{}un étudiant \end{DoxyCompactList}\item 
+void \hyperlink{etud_8h_a1cc1b4218bcb85de60b4d1079b6c135b}{save} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em enregistrer les informations d\textquotesingle{}un étudiant \end{DoxyCompactList}\item 
+void \hyperlink{etud_8h_a3db78f32bf94daa92397749145468ccb}{load} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em chaarger la liste des étudiants lors du démmarage de l\textquotesingle{}application \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud} $\ast$ \hyperlink{etud_8h_a413821fbc7ff3d2e149b0147b3600f49}{p\+Etud}
+\item 
+int \hyperlink{etud_8h_a7441ef0865bcb3db9b8064dd7375c1ea}{id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}\label{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}} 
+\index{etud.\+h@{etud.\+h}!Etud@{Etud}}
+\index{Etud@{Etud}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{Etud}{Etud}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structetud}{etud} \hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{etud_8h_acaad045f03aea2b4ba2ea4d05e9c8808}\label{etud_8h_acaad045f03aea2b4ba2ea4d05e9c8808}} 
+\index{etud.\+h@{etud.\+h}!add\+\_\+etud@{add\+\_\+etud}}
+\index{add\+\_\+etud@{add\+\_\+etud}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+etud()}{add\_etud()}}
+{\footnotesize\ttfamily int add\+\_\+etud (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom,  }\item[{char $\ast$}]{prenom,  }\item[{float}]{note,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+ajouter un étudiant 
+
+ajouter un étudiant 
+\begin{DoxyParams}{Parameters}
+{\em } & char$\ast$ \\
+\hline
+{\em } & char$\ast$ \\
+\hline
+{\em } & float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: int
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em } & char$\ast$ \\
+\hline
+{\em } & char$\ast$ \\
+\hline
+{\em } & float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: int 0 si la liste est vide 1 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{etud_8h_ad75342cbc2aea3cf52cfa0669d9652d5}\label{etud_8h_ad75342cbc2aea3cf52cfa0669d9652d5}} 
+\index{etud.\+h@{etud.\+h}!average@{average}}
+\index{average@{average}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily float average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculer la moyenne 
+
+\begin{DoxyReturn}{Returns}
+\+:int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{etud_8h_aca1ed83fcec5a3abe61ffa9e168b22c5}\label{etud_8h_aca1ed83fcec5a3abe61ffa9e168b22c5}} 
+\index{etud.\+h@{etud.\+h}!delete\+\_\+etud@{delete\+\_\+etud}}
+\index{delete\+\_\+etud@{delete\+\_\+etud}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+etud()}{delete\_etud()}}
+{\footnotesize\ttfamily int delete\+\_\+etud (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+supprimer un étudiant 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{etud_8h_a9eb202d2d79a93e3f6a7e398933b79f2}\label{etud_8h_a9eb202d2d79a93e3f6a7e398933b79f2}} 
+\index{etud.\+h@{etud.\+h}!find\+\_\+etud@{find\+\_\+etud}}
+\index{find\+\_\+etud@{find\+\_\+etud}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+etud()}{find\_etud()}}
+{\footnotesize\ttfamily \hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud}$\ast$ find\+\_\+etud (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+recherhcer un étudiant 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{etud_8h_a7e4c07c628623f39e2c79d1f21d38856}\label{etud_8h_a7e4c07c628623f39e2c79d1f21d38856}} 
+\index{etud.\+h@{etud.\+h}!find\+\_\+etud\+\_\+by\+\_\+name@{find\+\_\+etud\+\_\+by\+\_\+name}}
+\index{find\+\_\+etud\+\_\+by\+\_\+name@{find\+\_\+etud\+\_\+by\+\_\+name}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+etud\+\_\+by\+\_\+name()}{find\_etud\_by\_name()}}
+{\footnotesize\ttfamily int find\+\_\+etud\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+trouver un étudiant en saisissant son nom 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{etud_8h_a3db78f32bf94daa92397749145468ccb}\label{etud_8h_a3db78f32bf94daa92397749145468ccb}} 
+\index{etud.\+h@{etud.\+h}!load@{load}}
+\index{load@{load}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void load (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+chaarger la liste des étudiants lors du démmarage de l\textquotesingle{}application 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{etud_8h_ad9429c78019005dc6e8e62a30166c64b}\label{etud_8h_ad9429c78019005dc6e8e62a30166c64b}} 
+\index{etud.\+h@{etud.\+h}!print\+\_\+list@{print\+\_\+list}}
+\index{print\+\_\+list@{print\+\_\+list}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+list()}{print\_list()}}
+{\footnotesize\ttfamily void print\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+afficher la liste des étudiants 
+
+\mbox{\Hypertarget{etud_8h_a1cc1b4218bcb85de60b4d1079b6c135b}\label{etud_8h_a1cc1b4218bcb85de60b4d1079b6c135b}} 
+\index{etud.\+h@{etud.\+h}!save@{save}}
+\index{save@{save}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void save (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+enregistrer les informations d\textquotesingle{}un étudiant 
+
+\mbox{\Hypertarget{etud_8h_a9bf3535d8e16833513b0c83b7e3529c6}\label{etud_8h_a9bf3535d8e16833513b0c83b7e3529c6}} 
+\index{etud.\+h@{etud.\+h}!set\+Note@{set\+Note}}
+\index{set\+Note@{set\+Note}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{set\+Note()}{setNote()}}
+{\footnotesize\ttfamily int set\+Note (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{float}]{note }\end{DoxyParamCaption})}
+
+
+
+modifier la note d\textquotesingle{}un étudiant 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{etud_8h_a7441ef0865bcb3db9b8064dd7375c1ea}\label{etud_8h_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{etud.\+h@{etud.\+h}!id@{id}}
+\index{id@{id}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id}
+
+\mbox{\Hypertarget{etud_8h_a413821fbc7ff3d2e149b0147b3600f49}\label{etud_8h_a413821fbc7ff3d2e149b0147b3600f49}} 
+\index{etud.\+h@{etud.\+h}!p\+Etud@{p\+Etud}}
+\index{p\+Etud@{p\+Etud}!etud.\+h@{etud.\+h}}
+\subsubsection{\texorpdfstring{p\+Etud}{pEtud}}
+{\footnotesize\ttfamily \hyperlink{etud_8h_a59e3bb2f0603d005266790936ee9ce4c}{Etud}$\ast$ p\+Etud}
+

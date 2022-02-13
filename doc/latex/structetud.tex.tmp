@@ -1,0 +1,29 @@
+\hypertarget{structetud}{}\section{etud Struct Reference}
+\label{structetud}\index{etud@{etud}}
+
+
+Collaboration diagram for etud\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structetud_a41ddefd3473727cad32a9767c10faed8}\label{structetud_a41ddefd3473727cad32a9767c10faed8}} 
+unsigned int {\bfseries num}
+\item 
+\mbox{\Hypertarget{structetud_aee34926ea76003bbcc975fe153d8f236}\label{structetud_aee34926ea76003bbcc975fe153d8f236}} 
+char {\bfseries nom} \mbox{[}50\mbox{]}
+\item 
+\mbox{\Hypertarget{structetud_acf879196fb0116270795a768b12baccf}\label{structetud_acf879196fb0116270795a768b12baccf}} 
+char {\bfseries prenom} \mbox{[}50\mbox{]}
+\item 
+\mbox{\Hypertarget{structetud_a6237b049d81028868055c48398511caf}\label{structetud_a6237b049d81028868055c48398511caf}} 
+float {\bfseries note}
+\item 
+\mbox{\Hypertarget{structetud_a976739e6ba7a7db9c1d991ae5ed5a045}\label{structetud_a976739e6ba7a7db9c1d991ae5ed5a045}} 
+struct \hyperlink{structetud}{etud} $\ast$ {\bfseries next}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/etud.\+h\end{DoxyCompactItemize}
